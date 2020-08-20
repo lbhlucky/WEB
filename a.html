@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>a로 링크 걸기</title>
+</head>
+<body>
+<h1><img alt="움짤" src="img/programming.gif">a 태그로 링크 걸기</h1>
+&lt;a href="링크경로"&gt; ..... &lt;/a&gt; <br>
+<a href="https://www.w3schools.com">https://www.w3schools.com 웹 다이소</a>
+<h3>링크 상태에 따른 색상</h3>
+<ol>
+ <li>초기 링크 = 파란색</li>
+ <li>방문한 링크 = 보라색</li>
+ <li>활성화 링크 = 빨간색</li>
+</ol>
+<a href="https://itwillbs.co.kr/">아이티윌부산</a>
+
+<h2>절대경로로 링크 걸기</h2>
+<a href="https://pixabay.com" target="_blank">pixabay.com</a>
+<a href="https://pexels.com" target="_blank">pexels.com</a>
+<a href="https://morguefile.com" target="_blank">morguefile.com</a>
+
+<h2>target 속성으로 새탭에 링크 열기</h2>
+ <a = href="https://itwillbs.co.kr" target="_blank" style="text-decoration: none;">아이티윌부산교육센터</a>
+
+<h5>문제. 다음 사이트를 새 탭에서 열어주는 링크 걸기</h5>
+<a href = "https://www.daum.net" target = "_blank">다음</a>
+
+<ul>
+ <li>target="_self" 기본값, 링크를 현재 위치에 열어줌</li>
+ <li><b>target="_blank" 링크를 새 탭에 열어줌</b></li>
+ <li>target="_top" (프레임구조의 문서에서)프레임으로 나뉘지 않고 전체에하나로 열어줌</li>
+ <li>target="_parent" (프레임구조의 문서에서) 한 단계 상위의 창에 열어줌.</li>
+</ul>
+
+<h2>상대경로로 링크걸기</h2>
+ 상대경로는 현재 웹문서(*.html)의 위치를 기준으로 경로가 지정됨.
+ 
+ 
+<nav>
+ <a href="form-1.html" title ="form 수업보기">form-1.html</a>
+ <a href="form-2.html">form-2.html</a>
+ <a href="img.html" title ="이미지 수업보기">img.html</a>
+</nav>
+
+<h3> title ="***" 속성으로 설명(툴팁) 넣기</h3>
+	&lt;a href="링크경로" title ="링크설명"&gt;	... &lt;/a&gt; <br>
+	&lt;img src="이미지경로" title ="이미지설명"&gt;
+
+ <h2>링크로 이미지 보여주기</h2>
+ 1. 절대 경로<br>
+ 	<a href="https://www.w3schools.com/html/pic_trulli.jpg">다이소 그림</a><br>
+ 	<br>
+ 2. 상대 경로<br>
+ 	<a href ="img/note.jpg">노트 그림</a> <br>
+ 	<br>
+ 3. 그림 아무거나 새탭에 열기 <br>
+ 	<a href ="img/monster.png" target="_blank">아무 그림</a>
+ 	<br>
+ 
+ <h2>링크로 동영상 보여주기</h2>
+ 	<a href ="img/trees.mp4">숲영상</a>
+ 	
+ <h2>링크로 text파일 보여주기</h2>
+ 	<a href ="form-test.txt">form 문제용 텍스트 파일</a>
+ 
+ <h2>압축파일로 링크 걸기(다운로드 됨)</h2>
+ 	<a href ="img.zip">압축파일(*.zip)</a>
+ 		
+ <hr>	
+ <p>
+ 	태그로 링크를 건 대상이 웹주소(url), 웹페이지(htm or html),<br>
+ 	이미지(gif or jpg or png), 동영상(mp4 or webm or ogg), 텍스트(txt)인 경우는 <br>
+ 	브라우저가 처리 가능하므로 바로 열어서 보여주고,<br>
+ 	브라우저가 처리 불가능한 대상인 경우(압축파일, 한글, 엑셀 등)는 다운로드 됨.
+ </p>
+ <hr>
+ 
+ <h2>이미지에 링크 걸기</h2>
+ 	<a href="https://www.itwillbs.co.kr" target="_blank" title ="아이티윌부산센터"><img alt ="아이티윌로고" src ="img/itwill_logo.png" ></a>
+ 
+ <p> 썸네일 이미지 클릭 ~원본 이미지 보여주기 <br>
+ <a href="img/cat.jpg"><img alt="cat" src ="img/cat.jpg" width="100"></a> <br>
+ 
+ 아무거나 해보기 <br>
+ <a href="img/backpack.jpg"><img alt="packpack" src ="img/backpack.jpg" width="100"></a>
+ </p>
+ 
+ 
+ 
+ 	
+</body>
+</html>
