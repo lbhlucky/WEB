@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>링크3 - Image Map</title>
+</head>
+<body>
+	<nav>
+		<!--  html5 레이아웃용 태그 (메뉴바, 메뉴영역)  -->
+		<a href="a.html" itle="링크기본">링크1</a> <a href="a-1.html" title="내부링크">링크2</a>
+		<a href="a-2.html" title="이미지맵">링크3</a>
+	</nav>
+
+	<hr>
+	<h1>Image Map(이미지맵)</h1>
+	<p>
+		이미지 하나에 특정 구역을 설정하여 <br> 구역마다 다른 곳으로 링크를 걸 수 있다.
+	</p>
+<a href="https://morguefile.com/" target="_blank">이미지맵 생성기</a><br>
+
+<pre>
+	&lt;img alt="" src="" <mark>usemap="#이미지맵이름"</mark>&gt;
+	&lt;<mark>map name="이미지맵이름"</mark>&gt;
+		&lt;area shape="rect" coords="좌표값" href="이동할곳(주소값)" alt="" title=""&gt;
+		&lt;area shape="circle" coords="좌표값" href="이동할곳(주소값)" alt="" title=""&gt;
+		&lt;area shape="poly" coords="좌표값" href="이동할곳(주소값)" alt="" title=""&gt;
+	&lt;/map>
+	
+	- shape별 좌표값 -
+	
+	rect - 좌측상단의 점 우측하단의 점(x1,y1,x2,y2)
+	circle - 중심 점 반지름(x1,y1,r)
+	poly - 다각형의 각 모서리 점들(x1,y1,x2,y2,...,xn,yn)을 시계방향으로..
+	
+</pre>
+<a href="https://www.w3schools.com/html/html_images_imagemap.asp" target="_blank">이미지맵 설명보기</a><br><br>
+
+
+<img alt="laptop" src="img/laptop.jpg" usemap="#imgmap01">
+	<map name="imgmap01">
+		<area shape="rect" coords="0,0,100,150" href="a.html" alt="링크1"
+			title="링크1">
+		<area shape="circle" coords="150,190,30" href="a-1.html" alt="링크2"
+			title="링크2">
+		<area shape="poly" coords="200, 200, 280,280,100,280" href="a-2.html"
+			alt="링크3" title="링크3">
+
+	</map>
+
+
+	<img alt="laptop" src="img/laptop.jpg" usemap="#imgmap02">
+	<map id="i#imgmap02" name="imgmap02">
+		<area shape="poly" alt="" title=""
+			coords="507,200,535,195,557,174,591,179,587,152,610,146,600,123,612,109,591,95,
+			568,93,535,66,512,71,519,80,483,86,486,102,486,112,470,131,479,134,483,186,506,201"
+			href="" target="" />
+		<area shape="rect" alt="" title="" coords="188,74,422,195" href="#"	target="" />
+		<area shape="circle" alt="" title="" coords="116,220,31" href="#" target="" />
+	</map>
+</body>
+</html>
