@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/* 글자영역을 표시하기 위함 */
+
+#sec01>p {/*1. 관계선택자 - 부모자식*/
+	background-color: #aef;
+	width:  500px;
+	}
+/*
+.tal01, .tal02, .tal03, .tal04 {
+	2. 그룹선택자
+	background-color: #aef;
+	width:  500px;
+}
+*/
+
+/*text-align: ; (영역 내)글자의 수평 정렬*/
+
+.tal01 {text-align: left;}
+.tal02 {text-align: center;}
+.tal03 {text-align: right;}
+.tal04 {text-align: justify;}
+
+#tab-al {border: 1px solid;
+	width: 600px; height: 200px;
+}
+
+#tab-al th {border: 1px solid red;}
+#tab-al td {border: 1px solid blue;}
+
+pre {
+	font-size: 1.2em;
+	font-family: sans-serif;
+	}
+
+pre>span {font-weight: bold;}
+
+pre>a {text-decoration: none;}
+/*:hover - 마우스오버 시 할 동작 지정*/
+pre>a:hover {text-decoration: underline;
+			background-color: #000;
+			color: #fff;}
+
+th.tal01:hover {text-align: center;}
+td.tal03:hover {font-size: 20px;}			
+
+/*text-decoration : ; 글자의 여러 줄들*/
+
+.tdec01 {text-decoration: overline;}
+
+/*쇼핑몰같은 곳에서 할인 표현시 자주사용*/
+.tdec02 {text-decoration: line-through;}
+
+.tdec03 {text-decoration: underline;}
+
+.tedc04>a {text-decoration: none;}
+
+
+
+
