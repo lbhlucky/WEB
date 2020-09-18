@@ -1,6 +1,28 @@
 @charset "UTF-8";
 
 /* 글자영역을 표시하기 위함 */
+h1 {font-size: 26px;
+font-weight: 500;
+font-family: "Times", serif;
+font-style: italic;
+text-align: center;
+text-indent: 0.7em;
+text-transform: capitalize;
+text-decoration: underline;
+color: #00a;}
+
+section>h2 {
+	font-size: 23px;
+	font-weight: 400;
+	font-family: sans-serif;
+	font-style:normal;
+	text-align: left;
+	text-indent: 0.2%;
+	text-transform: uppercase;
+	text-decoration:overline;
+	color: #03d;
+}
+
 
 #sec01>p {/*1. 관계선택자 - 부모자식*/
 	background-color: #aef;
@@ -53,8 +75,57 @@ td.tal03:hover {font-size: 20px;}
 
 .tdec03 {text-decoration: underline;}
 
-.tedc04>a {text-decoration: none;}
+.tdec04 {background-color: #000;
+   font-size:1.2em; 
+   font-weight: bold;
+   color:#fff; }
+.tdec04>a {text-decoration: none;
+   color: #ff0; }
+.tdec04>a:hover {
+	text-decoration: underline;}
 
+/* text-indent : ; 글자 들여쓰기 */
+.tind01 {text-indent: 16px;}
+.tind02 {text-indent: 0.5em;}
+.tind03 {text-indent: 10%;}
+.tind04 {text-indent: -50px;}
+.tind05:hover {text-indent: 30%;}
 
+/* text-transform: ; 영문의 대소문자 지정 */
+.ttr01 {text-transform: none;}
+.ttr02 {text-transform: lowercase;}
+.ttr03 {text-transform: uppercase;}
+.ttr04 {text-transform: capitalize;}
 
+#sec05>p {
+	font-size: 60px;
+	font-weight: bold;
+	font-family: "Tahoma", sans-serif;
+	text-align: center;
+	text-transform: capitalize;
+	letter-spacing: 3px;
+}
 
+.tsh01 {text-shadow: 3px 0 0 #444;}
+.tsh02 {text-shadow: 0 3px 0 #444;}
+.tsh03 {text-shadow: 0 0 3px #444;}
+.tsh04 {text-shadow: 6px 8px 5px #333;}
+.tsh05 {text-shadow: -10px -12px 5px #333;}
+.tsh06 {text-shadow: 0 0 0 #000;}
+.tsh06:hover {text-shadow: 0 0 14px #9fd;
+transition: 2.5s ease-out;}
+.tsh07 {text-shadow: 6px 8px 10px #fa6, -6px -8px 10px #fa6;}
+.tsh08 {text-shadow: 0 0 16px #f5e;
+transition: 0.5s ease-out;}
+
+.bg-bk {background-color: #000;
+padding: 1em;
+}
+
+.pre {
+	/*공백처리를 그대로 살림*/
+	white-space: pre;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #530;
+}

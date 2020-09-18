@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>box_model</title>
+<link href ="box_model.css" rel="stylesheet">
+</head>
+<body>
+<h1 class="h1st">box_model</h1>
+ <p class = "pre boxst">
+  tag 요소가 브라우저에서 차지하는 공간이 박스형,
+  요소의 테두리를 기준으로 바깥 양사방의 공간을 "margin",
+  안쪽 양사방의 여백을 "padding"이라한다.
+  tag 종류별로 기본값이 있거나 없고 그 값들도 다르다.
+ </p>
+ 
+ <h2>안쪽 여백 = padding</h2>
+  <label> 양 사방 n[px]로 통일
+   <input type="text" value="padding: 6px;" class="pad01">
+  </label><br>
+  <label> 양 사방 n[em]로 통일
+   <input type="text" value="padding: 0.5em;" class="pad02">
+  </label><br>
+  <label> 값 2개 지정 (상하 i) (좌우 j) 상하,좌우 서로 통일(i&lt;k)
+   <input type="text" value="padding: 0.5em 1.5em;" class="pad03">
+  </label><br>
+  <label> 값 2개 지정 (상하 i) (좌우 j) 상하,좌우 서로 통일(i&gt;k)
+   <input type="text" value="padding: 1.5em 0.5em;" class="pad04">
+  </label><br>
+  <label> 값 3개 지정 (상 i) (좌우 j), (하 k)   
+   <input type="text" value="padding: 0.2em 1em 1.5em;" class="pad05">
+  </label><br>
+  <label> 값 4개 지정 (상 i) (우) (하 k) (좌 l)  : 위에서부터 시계 방향
+   <input type="text" value="padding: 4px 8px 12px 16px;" class="pad06">
+  </label><br>
+  <p> button padding: 1.5em 0.5em 지정
+  <button class="pad03">button padding</button>
+  </p>
+
+ <nav> a에 padding: 5px 10px 지정해서 커서의 반응영역을 넓힘<br>
+ 		(a는 크기 적용 불가함)<br>
+    <a href="#">◀</a>
+    <a href="basic.css">1</a>
+    <a href="basic.html">2</a>
+    <a href="font.html">3</a>
+    <a href="text.html">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">7</a>
+    <a href="#">8</a>
+    <a href="#">9</a>
+    <a href="#">10</a>
+    <a href="#">▶</a>
+  </nav>  
+ 
+<table>
+<!-- caption은 표의 제목을 나타냄 -->
+<caption>td에 padding: 6px 50px 지정</caption>
+ <tr>
+  <th>th cell</th>
+  <th>th cell</th>
+  <th>th cell</th>
+ </tr>
+ <tr>
+  <td>td cell</td>
+  <td>td cell</td>
+  <td>td cell</td>
+ </tr>
+ <tr>
+  <td>td cell</td>
+  <td>td cell</td>
+  <td>td cell</td>
+ </tr>
+ <tr>
+  <td>td cell</td>
+  <td>td cell</td>
+  <td>td cell</td>
+ </tr>
+ <tr>
+  <td>td cell</td>
+  <td>td cell</td>
+  <td>td cell</td>
+ </tr>
+</table>
+  
+  
+</body>
+</html>
+
+
+
+
+
+
+
+

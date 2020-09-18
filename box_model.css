@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+.h1st {border: 1px solid;
+width: 600px;}
+
+.pre {white-space: pre;}
+
+.boxst {border: 1px solid;
+width: 600px;
+line-height: 1.8;}	/*줄 간격*/
+
+/* 안쪽 여백 = padding */
+input {border: 1px solid #487;}
+
+.pad01 {padding: 6px;}
+.pad02 {padding: 0.5em;}
+.pad03 {padding: 0.5em 1.5em;} /* (상하) (좌우) */
+.pad04 {padding: 1.5em 0.5em;} /* (상하) (좌우) */
+.pad05 {padding: 0.2em 1em 1.5em} /* (상) (좌우) (하) */
+.pad06 {padding: 4px 8px 12px 16px} /* (상) (우) (하) (좌) 위에서부터 시계방향 */
+
+nav {padding: 1em;
+line-height: 2; /* 줄간격(행간) */ }
+
+nav>a {
+	background-color: #000;
+	color: #fff;
+	text-decoration: none;
+/* 	width: 20px; */
+	padding: 5px 10px;
+}
+
+nav>a:hover {
+	background-color: #ff0;
+	color: #520;
+}
+
+table, th, td {border: 1px solid;
+color: #7aa;}
+
+/* table { width: 500px; height: 100px;} */
+
+th {background-color: #7aa; 
+	border-color: #488;
+	padding: 10px 50px;
+	text-transform: capitalize;
+	color: #fff;}
+td { padding: 6px 50px;}
+
+caption {text-align: left;}
