@@ -48,3 +48,34 @@ th {background-color: #7aa;
 td { padding: 6px 50px;}
 
 caption {text-align: left;}
+
+/* padding의 방향별 지정 속성 */
+#pd-div>p {	border: 1px solid;
+			color: #a00;}
+
+.p-l {padding-left: 80px;}
+.p-r {text-align: right;
+	  padding-right: 80px;}
+.p-t {padding-top: 2.5em;}
+.p-b {padding-bottom: 2.5em;}
+
+.h2-st {border-left: 12px solid;
+		background-color: #fdc;
+		padding-left: 10px;
+		padding-bottom: 5px;
+		color: #900;
+} 
+
+.p-04 {
+	padding: 1em 1em 1.5em 1.2em;
+}
+
+/* padding으로 폴라로이드 스타일 효과내기 */
+
+#pola >img { border: 1px solid;}
+
+.pola01 {padding: 1em;}
+.pola02 {padding: 1em;
+		padding-bottom:5em;}
+.pola03 {padding: 1em 1em 7em;}	
+.pola04 {padding: 1.5em 1.3em 10em 1.3em;}
