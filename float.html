@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>float</title>
+</head>
+<link href ="float.css" rel="stylesheet">
+<link href ="style.css" rel="stylesheet">
+<body>
+
+<nav>
+ <ul>
+  <li><a href="#sec01">content 01</a></li>
+  <li><a href="#sec03">content 02</a></li>
+  <li><a href="#h2-1">content 03</a></li>
+  <li><a href="#h2-2">content 04</a></li>
+ </ul>
+</nav>
+
+<nav id="nav-right">
+ <ul>
+  <li><a href="#sec01">content 01</a></li>
+  <li><a href="#sec03">content 02</a></li>
+  <li><a href="#h2-1">content 03</a></li>
+  <li><a href="#h2-2">content 04</a></li>
+ </ul>
+</nav>
+
+<h1 class="clear">float: left/right; 부유하다</h1>
+<!-- float를 주면 block 요소들도 나란히 선언가능 -->
+<p>
+	float을 준 요소는 브라우저 위에 뜬 상태가 됨.<br>
+	뜬 상태에서 좌측이나 우측에 자리 잡고, <br>
+	그 밑으로는 빈 공간이 생기면서 다음 요소들이 자연스릅게 밀고 올라오게 됨
+</p>
+
+<section id="sec01">
+ <h2>img에 float: left; 적용</h2>
+ 
+  <p>
+  청춘의 사는가 피부가 새가 피가 부패를 피가 그들은 봄바람이다. 뛰노는 행복스럽고 것은 보배를 약동하다. 남는 트고,
+  <img alt="coffe" src="img/coffee.jpg" width="100" height="100">
+			그러므로 속에 꽃 부패를 끓는다. 두기 오아이스도 그림자는 우는 주는 소담스러운 찬미를 이것이다. 찾아 가지에 생의 만천하의
+			눈이 사막이다. 동산에는 새 커다란 위하여, 천자만홍이 것이다.보라, 기쁘며, 때까지 수 뿐이다. 가슴에 사랑의 가진 보라.
+			그들을 모래뿐일 따뜻한 것이다. 구하지 자신과 그들은 힘차게 인생의 품에 대한 몸이 것이다. 싸인 황금시대의 바이며, 수
+			시들어 무엇을 것이다. 심장의 청춘이 영원히 찾아 봄바람이다. 청춘의 사는가 피부가 새가 피가 부패를 피가 그들은
+			봄바람이다. 뛰노는 행복스럽고 것은 보배를 약동하다. 남는 트고, 그러므로 속에 꽃 부패를 끓는다. 두기 오아이스도 그림자는
+			우는 주는 소담스러운 찬미를 이것이다. 찾아 가지에 생의 만천하의 눈이 사막이다. 동산에는 새 커다란 위하여, 천자만홍이
+			것이다.보라, 기쁘며, 때까지 수 뿐이다. 가슴에 사랑의 가진 보라. 그들을 모래뿐일 따뜻한 것이다. 구하지 자신과 그들은
+			힘차게 인생의 품에 대한 몸이 것이다. 싸인 황금시대의 바이며, 수 시들어 무엇을 것이다. 심장의 청춘이 영원히 찾아
+			봄바람이다.</p>
+ 
+</section>
+
+<section id="sec02">
+ <h2>img에 float: right; 적용</h2>
+ 
+  <p>
+  청춘의 사는가 피부가 새가 피가 부패를 피가 그들은 봄바람이다. 뛰노는 행복스럽고 것은 보배를 약동하다. 남는 트고,
+			그러므로 속에 꽃 부패를 끓는다. 두기 오아이스도 그림자는 우는 주는 소담스러운 찬미를 이것이다. 찾아 가지에 생의 만천하의
+  <img alt="coffe" src="img/coffee.jpg" width="100" height="100">
+			눈이 사막이다. 동산에는 새 커다란 위하여, 천자만홍이 것이다.보라, 기쁘며, 때까지 수 뿐이다. 가슴에 사랑의 가진 보라.
+			그들을 모래뿐일 따뜻한 것이다. 구하지 자신과 그들은 힘차게 인생의 품에 대한 몸이 것이다. 싸인 황금시대의 바이며, 수
+			시들어 무엇을 것이다. 심장의 청춘이 영원히 찾아 봄바람이다. 청춘의 사는가 피부가 새가 피가 부패를 피가 그들은
+			봄바람이다. 뛰노는 행복스럽고 것은 보배를 약동하다. 남는 트고, 그러므로 속에 꽃 부패를 끓는다. 두기 오아이스도 그림자는
+			우는 주는 소담스러운 찬미를 이것이다. 찾아 가지에 생의 만천하의 눈이 사막이다. 동산에는 새 커다란 위하여, 천자만홍이
+			것이다.보라, 기쁘며, 때까지 수 뿐이다. 가슴에 사랑의 가진 보라. 그들을 모래뿐일 따뜻한 것이다. 구하지 자신과 그들은
+			힘차게 인생의 품에 대한 몸이 것이다. 싸인 황금시대의 바이며, 수 시들어 무엇을 것이다. 심장의 청춘이 영원히 찾아
+			봄바람이다.</p>
+ 
+</section>
+
+<section id="sec03">
+ <h2> clear: both; 적용</h2>
+ <p>
+ 	위에 있는 2개의 section은 나란히 배치하기위해 float: left/right;를 적용했고,<br>
+ 	float의 영향을 받아서 세번째(현재) section이 위로 밀고 올라왔음.<br>
+ 	따라서, 제자리로 보내기 위해(float의 영향을 해제하기 위해)<br>
+ 	세번쨰(현재) section은 clear: both;를 적용함
+ </p>
+ 
+  <p>
+  청춘의 사는가 피부가 새가 피가 부패를 피가 그들은 봄바람이다. 뛰노는 행복스럽고 것은 보배를 약동하다. 남는 트고,
+			그러므로 속에 꽃 부패를 끓는다. 두기 오아이스도 그림자는 우는 주는 소담스러운 찬미를 이것이다. 찾아 가지에 생의 만천하의
+  <img alt="coffe" src="img/coffee.jpg" width="100" height="100">
+			눈이 사막이다. 동산에는 새 커다란 위하여, 천자만홍이 것이다.보라, 기쁘며, 때까지 수 뿐이다. 가슴에 사랑의 가진 보라.
+			그들을 모래뿐일 따뜻한 것이다. 구하지 자신과 그들은 힘차게 인생의 품에 대한 몸이 것이다. 싸인 황금시대의 바이며, 수
+			시들어 무엇을 것이다. 심장의 청춘이 영원히 찾아 봄바람이다. 청춘의 사는가 피부가 새가 피가 부패를 피가 그들은
+			봄바람이다. 뛰노는 행복스럽고 것은 보배를 약동하다. 남는 트고, 그러므로 속에 꽃 부패를 끓는다. 두기 오아이스도 그림자는
+			우는 주는 소담스러운 찬미를 이것이다. 찾아 가지에 생의 만천하의 눈이 사막이다. 동산에는 새 커다란 위하여, 천자만홍이
+			것이다.보라, 기쁘며, 때까지 수 뿐이다. 가슴에 사랑의 가진 보라. 그들을 모래뿐일 따뜻한 것이다. 구하지 자신과 그들은
+			힘차게 인생의 품에 대한 몸이 것이다. 싸인 황금시대의 바이며, 수 시들어 무엇을 것이다. 심장의 청춘이 영원히 찾아
+			봄바람이다.</p>
+ 
+</section>
+
+<hr>
+
+<h2 id="h2-1">float과 clear로 레이아웃 연습</h2>
+
+<p class="fl-p fl-le">[p-1] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+		vulputate vulputate arcu, sed faucibus tortor luctus sit amet. Nunc
+		bibendum, velit at lacinia molestie, enim dolor tincidunt odio, eget
+		accumsan est ipsum vitae turpis. Aenean quis malesuada mi. Nullam
+		convallis scelerisque pretium. Cras tempor mattis volutpat. Vestibulum
+		dictum tortor nulla, sed ultricies ex malesuada quis. Ut aliquam ut
+		nisi ut auctor. Vivamus ac nibh tellus. Orci varius natoque penatibus
+		et magnis dis parturient montes, nascetur ridiculus mus. Vivamus ac
+		venenatis ipsum. Ut at diam tincidunt, elementum tortor eu, volutpat
+		ante. Etiam placerat ligula quis aliquam convallis.
+</p>
+
+<p class="fl-p fl-le">[p-2] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+		vulputate vulputate arcu, sed faucibus tortor luctus sit amet. Nunc
+		bibendum, velit at lacinia molestie, enim dolor tincidunt odio, eget
+		accumsan est ipsum vitae turpis. Aenean quis malesuada mi. Nullam
+		convallis scelerisque pretium. Cras tempor mattis volutpat. Vestibulum
+		dictum tortor nulla, sed ultricies ex malesuada quis. Ut aliquam ut
+		nisi ut auctor. Vivamus ac nibh tellus. Orci varius natoque penatibus
+		et magnis dis parturient montes, nascetur ridiculus mus. Vivamus ac
+		venenatis ipsum. Ut at diam tincidunt, elementum tortor eu, volutpat
+		ante. Etiam placerat ligula quis aliquam convallis.
+</p>
+
+<p class="fl-p clear fl-le2">[p-3] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+		vulputate vulputate arcu, sed faucibus tortor luctus sit amet. Nunc
+		bibendum, velit at lacinia molestie, enim dolor tincidunt odio, eget
+		accumsan est ipsum vitae turpis. Aenean quis malesuada mi. Nullam
+		convallis scelerisque pretium. Cras tempor mattis volutpat. Vestibulum
+		dictum tortor nulla, sed ultricies ex malesuada quis. Ut aliquam ut
+		nisi ut auctor. Vivamus ac nibh tellus. Orci varius natoque penatibus
+		et magnis dis parturient montes, nascetur ridiculus mus. Vivamus ac
+		venenatis ipsum. Ut at diam tincidunt, elementum tortor eu, volutpat
+		ante. Etiam placerat ligula quis aliquam convallis.
+</p>
+
+<p class="fl-p fl-le2">[p-4] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+		vulputate vulputate arcu, sed faucibus tortor luctus sit amet. Nunc
+		bibendum, velit at lacinia molestie, enim dolor tincidunt odio, eget
+		accumsan est ipsum vitae turpis. Aenean quis malesuada mi. Nullam
+		convallis scelerisque pretium. Cras tempor mattis volutpat. Vestibulum
+		dictum tortor nulla, sed ultricies ex malesuada quis. Ut aliquam ut
+		nisi ut auctor. Vivamus ac nibh tellus. Orci varius natoque penatibus
+		et magnis dis parturient montes, nascetur ridiculus mus. Vivamus ac
+		venenatis ipsum. Ut at diam tincidunt, elementum tortor eu, volutpat
+		ante. Etiam placerat ligula quis aliquam convallis.
+</p>
+
+
+<h2 class="clear">float과 clear로 레이아웃 연습 end</h2>
+
+
+<h2 id="h2-2">float과 clear로 레이아웃 연습</h2>
+ <p>
+  float:right;로 요소들을 나란히 배치하여 우측으로 정리하면<br>
+  요소들의 순서가 밀려지므로 주의해서 사용해야 함
+ </p>
+ <div class="div-box">
+ 	div-01 <br>
+ 	<img alt="summer" src="img/summer.jpg">
+ </div>
+ 
+ <div class="div-box div-02">
+ 	div-02 <br>
+ 	<img alt="meadow" src="img/meadow.jpg">
+ </div>
+ 
+ <div class="div-box">
+ 	div-03 <br>
+ 	<img alt="austrailan" src="img/australian.jpg">
+ </div>
+
+
+<h2 class="clear">float과 clear로 레이아웃 연습 end</h2>
+
+
+</body>
+</html>

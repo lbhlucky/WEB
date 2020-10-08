@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/* * {margin: 0; padding: 0} */		/* CSS 초기화 코드 */
+/* 전체선택자로 모든 요소의 여백을 초기화함.
+   (태그마다 각자 기본 여벽값이 상이하므로 0으로 통일)
+    */
+ 
+nav {border: 1px solid green;}
+nav ul {border: 1px solid blue;
+/* height: 30px; */
+
+/* 자식들이 float으로 빠져나가면
+부모는 형태를 잃어버림(높이값이 0)
+따라서, 1. 직접 height 값을 주거나
+		2. overflow를 hidden으로 지정하면 됨 */
+overflow: hidden;
+list-style: none;	/* 목록앞의 기본 모양 제거 */
+padding-left: 0;
+}
+
+nav li {border: 1px solid red;
+background-color: red;
+float: left;
+margin-right: 40px;
+	/* 행간값과 높이 값을 일치시키면 한 줄끼리 골자가 수직 중앙 정렬됨 */
+height: 35px;
+line-height: 35px;
+}
+
+nav li:hover{background-color: pink;
+transition:1.3s;}
+
+nav a {border: 1px solid olive;
+padding: 8px 5px;
+text-decoration: none;	/* 글자의 밑줄 제거 */
+font-weight: bold;
+text-transform: capitalize;
+}
+
+/* a태그 기본 글자 색 변경 */
+nav a:link, nav a:visited {
+	color: pink;
+}
+/* a태그 동작시 글자 색 변경 */
+nav li:hover, nav a:active {
+	color: red;
+}
+
+#nav-right>ul {
+	float: right;
+}
+
+section>p {
+	width: 600px;
+}
+
+#sec01, #sec02 { /* 그룹선택자(,로 이어 붙여서 호출) */
+	width: 650px;
+	float: left;
+}
+
+#sec01 img {
+	float: left;
+	margin-right: 1em;
+	/* 몇단계 안에 자식을 불러오려면 띄어쓰기 한번 하면 된다 */
+}
+
+#sec02 img {
+	float: right;
+	margin-left: 1em;
+	/* 몇단계 안에 자식을 불러오려면 띄어쓰기 한번 하면 된다 */
+}
+
+#sec03 {
+	border-color: #f00;
+	clear: both;	/* float에 빠져나오기 위해 */
+}
+
+#h2-1, #h2-2 {
+	margin-top: 10em;
+}
+
+
+/* float와 clear 활용 레이아웃 연습 */
+.fl-p {
+	border: 1px solid red;
+}
+
+.fl-le {
+	background-color: #aef;
+	float: left;
+	width: 45%;
+}
+
+.clear {
+	clear: both;
+}
+
+.fl-le2 {
+	background-color: #f77;
+	float: left;
+	width: 47%;
+	margin-right: 1%; 
+	margin-top: 50px;
+}
+
+.div-box {
+	border: 1px solid;
+	padding: 1em;
+	font-size: 1.5em;
+	float: right; 
+	margin-left: 2em;
+}
+
+.div-box>img{width: 380px;}
+
+.div-02{margin-right: 100px;}
+
+
+
+
+
+
+
+
+
